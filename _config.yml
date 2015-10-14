@@ -1,0 +1,45 @@
+permalink: /:year-:month-:day/:title/
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: [
+   "no_intra_emphasis"
+   ,"fenced_code_blocks"
+   ,"autolink"
+   ,"tables"
+   ,"strikethrough"
+   ,"superscript"
+   ,"with_toc_data"
+   ,"footnotes"
+   ,"highlight"
+   ,"underline"
+   ,"quote"
+   ,"lax_spacing"
+   ,"prettify"
+#   ,"html_toc"
+  ]
+
+
+
+paginate: 10
+paginate_path: ":num"
+baseurl: ""
+
+
+
+title: "Jccccccccccccccccccccc"
+email: "zhjcyx@gmail.com"
+description: "Developer"
+github_username:  "zhangjaycee"
+#swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
+swiftype_searchId: "9BmVPxULeMAjBJkDt_EU"
+disqus_shortname: "zjc"
+
+
+
+url: "http://blog.xdjc.date"
+imgrepo: "http://blog.xdjc.date/static/img"
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+
