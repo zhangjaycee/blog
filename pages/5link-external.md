@@ -5,5 +5,5 @@ permalink: /link/
 icon: octicon-link-external
 ---
 
-###[My Weibo](http://weibo.com/zhangjc/)
+### [My Weibo](http://weibo.com/zhangjc/)
 
