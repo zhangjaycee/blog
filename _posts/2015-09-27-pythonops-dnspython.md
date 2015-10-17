@@ -9,15 +9,15 @@ categories: python
 ### 准备工作
 * 环境：Ubuntu 14.04 32bit
 * 工具：dnspython
-> 对应的shell工具：nslookup  dig等
+ 对应的shell工具：nslookup  dig等
 
 * dns预备知识：
->常用资源记录RR（Resource Records）类型
+常用资源记录RR（Resource Records）类型
 A记录： 主机名--> IP地址
 MX记录： 定义邮件服务器域名
 CNAME： 域名间映射
 PTR： IP地址 -->主机名（反向解析）
->> 更详细介绍参考博文《[ [DNS]常见资源记录定义（Resource Record) ](http://blog.csdn.net/a19881029/article/details/19486949)》
+> 更详细介绍参考博文《[ [DNS]常见资源记录定义（Resource Record) ](http://blog.csdn.net/a19881029/article/details/19486949)》
 
 
 ### 用法举例
@@ -47,8 +47,8 @@ for i in MX:
 ```
 
 * 域名轮询监控
-	step1:查询A记录
-	step2:对ip进行http监测
+step1:查询A记录
+step2:对ip进行http监测
 
 ```python
 import httplib
