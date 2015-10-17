@@ -5,8 +5,7 @@ tags: python linux 运维
 categories: python
 ---
 
-
-### 准备工作
+## 准备工作
 * 环境：Ubuntu 14.04 32bit
 * 工具：dnspython
  对应的shell工具：nslookup  dig等
@@ -20,7 +19,7 @@ PTR： IP地址 -->主机名（反向解析）
 > 更详细介绍参考博文《[ [DNS]常见资源记录定义（Resource Record) ](http://blog.csdn.net/a19881029/article/details/19486949)》
 
 
-### 用法举例
+## 用法举例
 
 * 查询A记录
 
