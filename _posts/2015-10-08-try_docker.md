@@ -20,7 +20,8 @@ RUN sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/mirrors\.163\.com
 ~~~
 
 
-# gem国内源貌似也不行([原文链接](http://www.haorooms.com/post/gem_not_use))
+# gem国内源貌似也不行
+([原文链接](http://www.haorooms.com/post/gem_not_use))
 
 ## 做法：
 Dockerfile中添加：

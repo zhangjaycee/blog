@@ -8,9 +8,11 @@ categories: python
 
 ## 环境:ubuntu 14.04 32bit
 ## 工具：psutil
-```
-对应的shell工具：ps  top  lsof  netstat  ifconfig  who df  kill  nice  free  ionice  iostat  iotop  uptime  pidof  tty  taskset  pmap
-```
+~~~
+对应的shell工具：ps  top  lsof  netstat  ifconfig  who 
+df kill  nice  free  ionice  iostat  iotop  uptime  pidof  
+tty  taskset  pmap
+~~~
 
 ## 安装：
 采用pip可以安装`pip install psutil`。(注意需要安装python-dev:  `sudo apt-get install python-dev`)
@@ -20,7 +22,7 @@ categories: python
 ##### cpu信息：
 ~~~python
 psutil.cpu_times() #cpu完整信息
-psutil.cpu_count(logical=False) ＃cpu物理个数，
+psutil.cpu_count(logical=False) #cpu物理个数
 ~~~
 logical默认为True即cpu逻辑个数
 ##### 内存信息：
