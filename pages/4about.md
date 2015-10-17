@@ -5,16 +5,24 @@ permalink: /about/
 icon: octicon-heart
 isNavItem: true
 ---
-#我
+
+
+##我
+
+
 
 <wb:follow-button uid="1667668643" type="red_4" width="100%" height="64" ></wb:follow-button>
 
 ### 西安电子科技大学
 电子工程学院13级卓越班
 
+
+
 ***
 
-#博客
+
+
+##博客
 
 本人开的第一个博客。。。
 内容包括学习过程中的各种心得体会和总结摘抄。
