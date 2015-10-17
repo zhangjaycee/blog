@@ -88,7 +88,30 @@ layout: null
     -o-transition: background .4s ease-in-out;
     transition: background .4s ease-in-out;
 }
+.footnote .foot-item2{
+    display: inline-block;
+    width: 195px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px 3px;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
 
+.footnote .foot-item2:hover{
+    background-color: #2ca6cb;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
 /* footer */
 .footnote{
     min-height: 50px;
