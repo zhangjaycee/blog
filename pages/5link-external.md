@@ -5,5 +5,4 @@ permalink: /link/
 icon: octicon-link-external
 ---
 
-### [My Weibo](http://weibo.com/zhangjc/)
-
+### [ascii快速查询](http://ascii.xdjc.date)
