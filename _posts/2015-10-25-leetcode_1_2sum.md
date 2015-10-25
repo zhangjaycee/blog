@@ -75,7 +75,6 @@ public:
         for (int i = 0; i < length; i++){
             rest = target - nums[i];
             if(num_index[rest]){
-            //由于rest和nums都可能为负数，数组OFFSET以前表示负数
                 answer.push_back(num_index[rest]);
                 answer.push_back(i + 1);
                 return answer;
