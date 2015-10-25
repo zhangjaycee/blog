@@ -1,15 +1,15 @@
 ---
 layout: post
-title: [LeetCode]第1题:Two Sum总结
+title: LeetCode第1题:Two Sum总结
 tags: leetcode 算法 map python c++
 categories: LeetCode
 ---
 
-> 完事开头难，算是开始刷leetcode了吧，不知道能不能坚持下去！在这放下一局，不坚持是小狗！——jc,15.10.25
+> 完事开头难，算是开始刷leetcode了吧，不知道能不能坚持下去！在这放下一句，不坚持是小狗！——jc,15.10.25
 
 第一题能就是一个纯属熟悉环境，从网上找了python版答案走了一遍流程：
 
-##### python [[1]]
+### python [1]
 ~~~python
 class Solution:
     # @return a tuple, (index1, index2)
@@ -22,19 +22,19 @@ class Solution:
 ~~~
 
 然后看到了题解：
->##### O(n^2) runtime, O(1) space – Brute force:
+>#### O( n^2^ ) runtime, O(1) space – Brute force:
 
->The brute force approach is simple. Loop through each element x and find if there is another value that equals to target – x. As finding another value requires looping through the rest of array, its runtime complexity is O(n^2).
+>The brute force approach is simple. Loop through each element x and find if there is another value that equals to target – x. As finding another value requires looping through the rest of array, its runtime complexity is O( n^2 ).
 
->##### O(n) runtime, O(n) space – Hash table:
+>#### O(n) runtime, O(n) space – Hash table:
 
 >We could reduce the runtime complexity of looking up a value to O(1) using a hash map that maps a value to its index.
 
-题解大意就是用直接遍历(暴力破解)的话就是O(n^2),但是用哈希表就是O(n)的复杂度。具体到python语言就可以使用内置的字典(dict)直接编写了。
+题解大意就是用直接遍历(暴力破解)的话就是O( n^2 ),但是用哈希表就是O(n)的复杂度。具体到python语言就可以使用内置的字典(dict)直接编写了。
 
 后来看了看C++的题解，尝试写了一个C++版本的代码：
 
-##### C++(数组)
+### C++(数组)
 
 ~~~cpp
 #define MAX 200002
@@ -63,7 +63,7 @@ public:
 };
 ~~~
 
-##### C++(STL map)
+### C++(STL map)
 ~~~cpp
 class Solution {
 public:
@@ -87,7 +87,7 @@ public:
 };
 ~~~
 
-##### Java
+### Java
 (题解答案，暂时不会java)
 ~~~java
 public int[] twoSum(int[] numbers, int target) {
@@ -103,6 +103,8 @@ public int[] twoSum(int[] numbers, int target) {
 }
 ~~~
 
-参考：
+*******
 
-[[1]] http://blog.csdn.net/hcbbt/article/details/43966403  [LeetCode] 001. Two Sum (Medium) (C++/Java/Python)
+* 参考：
+
+> [1] http://blog.csdn.net/hcbbt/article/details/43966403  [LeetCode] 001. Two Sum (Medium) (C++/Java/Python)
