@@ -17,7 +17,7 @@ redcarpet:
    ,"quote"
    ,"lax_spacing"
    ,"prettify"
-#   ,"html_toc"
+   ,"html_toc"
   ]
 
 
