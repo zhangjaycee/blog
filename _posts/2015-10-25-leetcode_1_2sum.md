@@ -9,7 +9,7 @@ categories: LeetCode
 
 第一题能就是一个纯属熟悉环境，从网上找了python版答案走了一遍流程：
 
-### python [1]
+### python^[1]
 ~~~python
 class Solution:
     # @return a tuple, (index1, index2)
@@ -22,7 +22,7 @@ class Solution:
 ~~~
 
 然后看到了题解：
->#### O( n^2^ ) runtime, O(1) space – Brute force:
+>#### O( n^2 ) runtime, O(1) space – Brute force:
 
 >The brute force approach is simple. Loop through each element x and find if there is another value that equals to target – x. As finding another value requires looping through the rest of array, its runtime complexity is O( n^2 ).
 
