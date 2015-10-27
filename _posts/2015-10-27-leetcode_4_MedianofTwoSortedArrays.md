@@ -1,3 +1,11 @@
+---
+layout: post
+title: LeetCode第4题:Median of Two Sorted Arrays总结
+tags: leetcode 数组 二分 分治 算法 python c++ 翻译
+categories: LeetCode
+---
+
+
 ## 题目
 > There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 
@@ -35,9 +43,12 @@ class Solution(object):
             return self.findMedianSortedArrays(nums1[i2:], nums2[:i1])
 ~~~
 
-#### 参考：
-原文：《[share my o(log(min(m,n)) solution with explanation](https://leetcode.com/discuss/15790/share-my-o-log-min-m-n-solution-with-explanation)》
-翻译：
+
+**参考**：
+
+*原文*：《[share my o(log(min(m,n)) solution with explanation](https://leetcode.com/discuss/15790/share-my-o-log-min-m-n-solution-with-explanation)》
+
+*翻译*：
 > * 已知一个长度为m的数组A，我们可以把它拆分成两部分：
 ~~~
 { A[0], A[1], ... , A[i - 1] } | { A[i], A[i + 1], ... , A[m - 1] }
@@ -72,8 +83,9 @@ class Solution(object):
 ~~~
 1) i + j == m -i + n - j(或: m - i +n -j + 1)，要是n >= m，那么我们只需要设置: 
        i = 0 ~ m, j = (m + n + 1) / 2 - i
-2) B[j - 1] <= A[i] 且 A[i - 1] <= B[j]，要是考虑迟到边缘值，其实我们需要保证的是：
-       (j \== 0 or i == m or B[j - 1] <= A[i]) and (i \== 0 or j == n or A[i - 1] <= B[j])
+2) B[j - 1] <= A[i] 且 A[i - 1] <= B[j]，要是考虑迟到边缘值，其实需要保证的是：
+       (j \== 0 or i == m or B[j - 1] <= A[i]) 
+   and (i \== 0 or j == n or A[i - 1] <= B[j])
 ~~~
 >* 所以，我们要去做的就是：
 *取i从0到m，找出符合上述两点要求的i值ix和对应的j值jx*
@@ -133,7 +145,7 @@ def median(A, B):
 
 ### C++
 
-#### 参考：
+**参考**：
 (《[Very concise O(log(min(M,N))) iterative solution with detailed explanation](https://leetcode.com/discuss/41621/very-concise-iterative-solution-with-detailed-explanation)》的代码)
 ~~~cpp
  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
