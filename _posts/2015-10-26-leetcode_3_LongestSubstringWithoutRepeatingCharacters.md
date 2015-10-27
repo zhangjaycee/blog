@@ -1,3 +1,11 @@
+---
+layout: post
+title: LeetCode第3题:Longest Substring Without Repeating Characters总结
+tags: leetcode 字典 字符串 算法 python c++ 
+categories: LeetCode
+---
+
+
 ## 题目：
 > Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.
 
