@@ -1,3 +1,10 @@
+---
+layout: post
+title: LeetCode第5题:Longest Palindromic Substring总结
+tags: leetcode 字符串 回文 算法 python c++
+categories: LeetCode
+---
+
 ## 题目：
 > Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
 
@@ -58,4 +65,5 @@ class Solution(object):
 ***************
 ### 参考：
 《[最长回文字符串](http://www.cnblogs.com/houkai/p/3371807.html)》http://www.cnblogs.com/houkai/p/3371807.html
+
 《[Accepted 4ms c++ solution.](https://leetcode.com/discuss/40559/accepted-4ms-c-solution)》https://leetcode.com/discuss/40559/accepted-4ms-c-solution
