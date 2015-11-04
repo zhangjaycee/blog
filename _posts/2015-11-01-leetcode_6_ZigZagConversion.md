@@ -76,4 +76,4 @@ class Solution(object):
 ~~~
 
 
-[problem]:{{"/2014110101.png" | prepend: site.imgrepo }}
+[problem]:{{"/2015110101.png" | prepend: site.imgrepo }}
