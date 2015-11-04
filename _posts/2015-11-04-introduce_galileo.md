@@ -57,7 +57,8 @@ ulibc版Linux可以采用usb直接连接通过screen minicom等工具直接进�
 > 《在 Linux 下使用 rfkill 软开关蓝牙及无线功能》: （http://www.linuxidc.com/Linux/2015-08/121119.htm）
 
 ## 硬件操作
-本人还在学习，先贴出一个方向：**mraa**([官网](http://iotdk.intel.com/docs/master/mraa/)
+本人还在学习，先贴出一个方向：**mraa**([官网](http://iotdk.intel.com/docs/master/mraa/))
+
 有了mraa，我们就可以用python直接操作galileo的gpio了，当然arduino IDE进行C/C++编程下载的方式操作硬件的方式依然是可行的！
 >参考：
 
