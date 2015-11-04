@@ -7,14 +7,18 @@ isNavItem: true
 ---
 
 
-##我
-
-
+# **张佳辰**
+### *Jaycee Zhang*
+[*zhjcyx@gmail.com*]
 
 <wb:follow-button uid="1667668643" type="red_4" width="100%" height="64" ></wb:follow-button>
 
-### 西安电子科技大学
-电子工程学院13级卓越班
+
+#### 西安电子科技大学 
+#### *Xidian University*
+
+##### 电子工程学院13级卓越班 
+#### *Electronic Engineering*
 
 
 
