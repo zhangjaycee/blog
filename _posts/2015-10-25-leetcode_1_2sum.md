@@ -8,6 +8,15 @@ categories: LeetCode
 > 万事开头难，算是开始刷leetcode了吧，不知道能不能坚持下去！在这放下一句，不坚持是小狗！——jc,15.10.25
 
 第一题能就是一个纯属熟悉环境，从网上找了python版答案走了一遍流程：
+## 题目
+>Given an array of integers, find two numbers such that they add up to a specific target number.
+
+>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+
+>You may assume that each input would have exactly one solution.
+
+>Input: numbers={2, 7, 11, 15}, target=9
+Output: index1=1, index2=2
 
 ### python^[1]
 ~~~python

@@ -11,9 +11,9 @@ categories: 嵌入式
 **Intel Galileo**（[点击查看中文官网](http://www.intel.cn/content/www/cn/zh/do-it-yourself/galileo-maker-quark-board.html)），是一个兼容Arduino的x86平台的开源硬件产品。个人感觉应当注意的是，特点就是兼容Arduino和x86，这样我们既能够利用丰富的Arduino软硬件及社区资源，又能够在上边运行linux甚至windows系统，做出更复杂的系统。
 
 >相关介绍：
->《x86 版的 Arduino 来了，Intel Galileo 开发板的体验、分析和应用【超长文多图】》（http://www.ifanr.com/388835）
+>《x86 版的 Arduino 来了，Intel Galileo 开发板的体验、分析和应用【超长文多图】》（http://www.ifanr.com/388835 ）
 
->《系出名門：Intel Galileo的十大特性》（http://www.leiphone.com/news/201406/intel-galileo.html）
+>《系出名門：Intel Galileo的十大特性》（http://www.leiphone.com/news/201406/intel-galileo.html ）
 >（更多请自行百度/google）
 
 ## “Arduino模式”
@@ -26,7 +26,7 @@ Galileo可以在SD卡中装入完整版Linux镜像，一旦在装有完整版Lin
 
 > 参考:
 
-> 《x86 版的 Arduino 来了，Intel Galileo 开发板的体验、分析和应用【超长文多图】》（http://www.ifanr.com/388835）
+> 《x86 版的 Arduino 来了，Intel Galileo 开发板的体验、分析和应用【超长文多图】》（http://www.ifanr.com/388835 ）
 
 
 ## 两种完整Linux系统
@@ -35,26 +35,26 @@ Galileo可以在SD卡中装入完整版Linux镜像，一旦在装有完整版Lin
 
 >参考:
 
->《Different linux images? uclibc verus eglibc images?》（https://communities.intel.com/message/241845#241845）
+>《Different linux images? uclibc verus eglibc images?》（https://communities.intel.com/message/241845#241845 ）
 
->《【整理】uclibc,eglibc,glibc之间的区别和联系》（http://bbs.chinaunix.net/thread-3762882-1-1.html）
+>《【整理】uclibc,eglibc,glibc之间的区别和联系》（http://bbs.chinaunix.net/thread-3762882-1-1.html ）
 
 >镜像下载:
 
->《Intel® Galileo Board Downloads》（https://software.intel.com/en-us/iot/hardware/galileo/downloads）
+>《Intel® Galileo Board Downloads》（https://software.intel.com/en-us/iot/hardware/galileo/downloads ）
 
 >镜像安装：
 
->《Making a bootable micro SD Card with Linux》（https://software.intel.com/en-us/programming-blank-sd-card-with-yocto-linux-image-linux）
+>《Making a bootable micro SD Card with Linux》（https://software.intel.com/en-us/programming-blank-sd-card-with-yocto-linux-image-linux  ）
 
 ## 连接
 ulibc版Linux可以采用usb直接连接通过screen minicom等工具直接进行终端连接，而elibc版试了下不行，可能要连接串口引脚，不过既然有了linux，而且是默认开启了ssh服务的linux，我们只需要利用以太网口和路由器，将自己的pc和Galileo置于同一内网，就可以用`ssh root@192.168.x.x`连接Galileo了。
 如果有无线网卡，通过设置，应该就可以拔掉那根网线，采用无线ssh登陆了。
 > 参考：
 
-> 《Intel Galileo 2 with USB WiFi Dongle (RT3070)》https://eexe1.wordpress.com/category/computer/iot/
+> 《Intel Galileo 2 with USB WiFi Dongle (RT3070)》(https://eexe1.wordpress.com/category/computer/iot/ )
 
-> 《在 Linux 下使用 rfkill 软开关蓝牙及无线功能》: （http://www.linuxidc.com/Linux/2015-08/121119.htm）
+> 《在 Linux 下使用 rfkill 软开关蓝牙及无线功能》: （http://www.linuxidc.com/Linux/2015-08/121119.htm ）
 
 ## 硬件操作
 本人还在学习，先贴出一个方向：**mraa**([官网](http://iotdk.intel.com/docs/master/mraa/))
@@ -62,9 +62,9 @@ ulibc版Linux可以采用usb直接连接通过screen minicom等工具直接进�
 有了mraa，我们就可以用python直接操作galileo的gpio了，当然arduino IDE进行C/C++编程下载的方式操作硬件的方式依然是可行的！
 >参考：
 
->《mraa github page》(https://github.com/intel-iot-devkit/mraa/tree/master/examples/python)
+>《mraa github page》(https://github.com/intel-iot-devkit/mraa/tree/master/examples/python )
 
-> 《如何在Linux系统中直接操作GPIO》(http://oszine.com/intel-galileo-gpio-1/)
+> 《如何在Linux系统中直接操作GPIO》(http://oszine.com/intel-galileo-gpio-1/ )
 
 
 
