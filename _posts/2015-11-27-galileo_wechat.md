@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Galileo开发板 + 微信公众平台的实现简单的物联网家庭监控 
+title: Galileo开发板+微信公众平台实现简单的物联网家庭监控 
 tags: intel galileo django python 服务器 docker IoT linux 
 categories: 服务器 嵌入式
 ---
@@ -9,10 +9,11 @@ categories: 服务器 嵌入式
 上次写的博客，介绍了下刚拿到galileo开发板的时候如何进行折腾。
 上次折腾完后，因为我发现galileo本身和一个装着linux的arduino/pc一样，那么用它来实现一些物联网应用会比较简单，又赶上本学期的工程设计课作业，所以初步实现了一个能用微信监测室内温度和拍摄室内照片的小型物联网系统。
 
->### 参考：
-![鼓捣Galileo开发板的一些吐槽] [galileo_intro]
+> 参考：
 
-下记录下实现过程。由于本人表述能力较差，采用简述加大量外部连接的方式进行记录。
+>《鼓捣Galileo开发板的一些吐槽》( http://blog.jcix.xyz/2015-11-04/introduce_galileo/ )
+
+记录下实现过程。由于本人表述能力较差，采用简述加大量外部连接的方式进行记录。
 
 ## 系统功能
 
@@ -49,12 +50,14 @@ categories: 服务器 嵌入式
 采用了grove的温度传感器、亮度传感器和LED，它们兼容arduino等单片机，采用模拟或数字采集，样例代码和说明见参考。
 
 > 参考：
+
 > 《(github)intel-iot-devkit/upm/examples/python》 ( https://github.com/intel-iot-devkit/upm/tree/master/examples/python )
+
 > 《seeed wiki》 ( http://www.seeedstudio.com/wiki/Main_Page )
 
 
 ## 摄像头设备
-摄像头采用UVC标准的普通网络摄像头(webcam)，这时由于完整版的galileo linux系统已经包含了相应的驱动。插上摄像头后，可以用`ls /dev/viceo*`看到这个外设。
+摄像头采用UVC标准的普通网络摄像头(webcam)，这时由于完整版的galileo linux系统已经包含了相应的驱动。插上摄像头后，可以用`ls /dev/video*`看到这个外设。
 
 ## 开发板端
 开发板上所做的工作分开说的话有两个：
@@ -126,9 +129,13 @@ exit 0
 
 
 > 参考:
+
 > 《ubuntu 下 init.d 服务启动脚本编写》 ( http://blog.csdn.net/littlefishzhang/article/details/8203183 )
+
 > 《Linux开机自动启动脚本方法》( http://blog.sina.com.cn/s/blog_70808ace0100o3in.html )
+
 > 《Edison开机自启动运行自己编译好的程序》( http://www.arduino.cn/thread-12535-1-1.html )
+
 > 《基于OpenCV的摄像头脸部识别抓取及格式储存(Python)》（ http://www.linuxidc.com/Linux/2014-12/110482.htm ）
 
 ### 与云服务器进行通信
@@ -279,12 +286,12 @@ from wechat_sdk.messages import TextMessage
 import json
 '''
 WECHAT_TOKEN = 'jcgalileo'
-AppID = 'wx4b7943f082770e22'
-AppSecret = '60186ab20d8e44bf2e7c496a9e7a34a1'
+AppID = 'xxxx'
+AppSecret = 'xxxx'
 '''
 WECHAT_TOKEN = 'jcgalileo2'
-AppID = 'wx5a13781f1ae1b5be'
-AppSecret = 'd4624c36b6795d1d99dcf0547af5443d'
+AppID = 'xxxx'
+AppSecret = 'xxxx'
 
 fp_tmp = open('log_tmp.txt','a+')
 
@@ -364,7 +371,8 @@ def checkSignature(request):
 ~~~
 
 >参考：
+
 >《基于python(django)+uwsgi+nginx的微信公众平台的实现》( http://www.linuxlearn.net/news/new/97/4851/ )
+
 >《Python/Django 微信接口》( http://www.ziqiangxuetang.com/django/python-django-weixin.html )
 
-[galileo_intro]:  {{"/2015-11-04/introduce_galileo/" | prepend: site.url }}
