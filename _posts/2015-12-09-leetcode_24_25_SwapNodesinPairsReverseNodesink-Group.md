@@ -1,4 +1,3 @@
-# leetcode  24 25 Swap Nodes in Pairs和Reverse Nodes in k-Group
 ---
 layout: post
 title: LeetCode第24/25题:Swap Nodes in Pairs和Reverse Nodes in k-Group总结
