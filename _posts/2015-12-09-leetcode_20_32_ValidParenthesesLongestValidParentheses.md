@@ -69,6 +69,8 @@ DP的思路：dp[i]代表第i个字符处结束的最大匹配串长度，
 
 > 参考:
 > 《My DP, O(n) solution without using stack》( https://leetcode.com/discuss/8092/my-dp-o-n-solution-without-using-stack )
+
+
 ###代码(python):
 ~~~python
 class Solution(object):
