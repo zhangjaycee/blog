@@ -145,6 +145,8 @@ class Solution(object):
 ~~~
 > 参考：
 > 《百度百科 归并排序》( http://baike.baidu.com/link?url=V2OlIM61x3mTzbnICxp-CK5GD6CfSz1JHy4KWHLpcRbgd6LO8Nz9oYobdtF58Lat6-BfiB8F1NH2P49QW0vW9_ )
+
+
 ### 思路1：
 用堆排序，用到了python的heapq这个数据结构。
 
