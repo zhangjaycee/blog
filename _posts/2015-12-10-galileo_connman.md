@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Intel Galileo开发版PCI-e无线网卡wifi配置  
+title: Intel Galileo开发版PCI-e无线网卡wifi配置  
 tags: intel galileo wifi connman IoT linux 
 categories: 嵌入式
 ---
@@ -33,21 +33,22 @@ comman(开发板的完整版linux已经内置)
 2. `connmanctl> enable wifi`，应该反馈`Enabled wifi`
 3. `connmanctl> scan wifi`, 反馈`Scan completed for wifi`
 4. `connmanctl> services`,此时会列出已经搜索到的wifi，样子像下边这样：
-~~~
+
+~~~bash
 rip and run guest network wifi_c8f733840a94_72697020616e642072756e206775657374206e6574776f726b_managed_psk
-    ripandrunbaby        wifi_c8f733840a94_726970616e6472756e62616279_managed_psk
-    SVPMeterConnectWiFi  wifi_c8f733840a94_5356504d65746572436f6e6e65637457694669_managed_none
+ripandrunbaby        wifi_c8f733840a94_726970616e6472756e62616279_managed_psk
+SVPMeterConnectWiFi  wifi_c8f733840a94_5356504d65746572436f6e6e65637457694669_managed_none
                          wifi_c8f733840a94_hidden_managed_psk
-    HOME-86DF            wifi_c8f733840a94_484f4d452d38364446_managed_psk
-    xfinitywifi          wifi_c8f733840a94_7866696e69747977696669_managed_none
-    Tnd home             wifi_c8f733840a94_546e6420686f6d6520_managed_psk
-    ALBNETNEW            wifi_c8f733840a94_414c424e45544e4557_managed_psk
-    aatblt-guest         wifi_c8f733840a94_616174626c742d6775657374_managed_none
-    aatblt               
+HOME-86DF            wifi_c8f733840a94_484f4d452d38364446_managed_psk
+xfinitywifi          wifi_c8f733840a94_7866696e69747977696669_managed_none
+Tnd home             wifi_c8f733840a94_546e6420686f6d6520_managed_psk
+ALBNETNEW            wifi_c8f733840a94_414c424e45544e4557_managed_psk
+aatblt-guest         wifi_c8f733840a94_616174626c742d6775657374_managed_none
     。
     。
     。
 ~~~
+
 5.找到你要链接的wifi之后，复制对应信息，并退出connman(`connmanctl> exit`)
 6.编辑wifi.config文件来配置自动链接 `sudo vi /var/lib/connman/wifi.config`,写入类似下边的内容并保存：
 （注意名字不能改，就是wifi.config）

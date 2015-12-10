@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Galileo开发板+opencv+微信公众平台实现简单的物联网家庭监控(2)  
+title: Galileo开发板+opencv+微信公众平台实现简单的物联网家庭监控(2)  
 tags: intel galileo django python 服务器 docker IoT linux 
 categories: 服务器 嵌入式
 ---
@@ -188,9 +188,9 @@ while True:
 
 ![show2][show2]
 
-[show0]:{{"/2015121001.PNG" | prepend: site.imgrepo }}
-[show1]:{{"/2015121002.PNG" | prepend: site.imgrepo }}
-[show2]:{{"/2015121003.PNG" | prepend: site.imgrepo }}
+[show0]:{{"/2015121001.png" | prepend: site.imgrepo }}
+[show1]:{{"/2015121002.png" | prepend: site.imgrepo }}
+[show2]:{{"/2015121003.png" | prepend: site.imgrepo }}
 
 
 
