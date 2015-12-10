@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode第26/37题:Remove Duplicates from Sorted Array和Remove Element 总结
+title: LeetCode第26/27题:Remove Duplicates from Sorted Array和Remove Element 总结
 tags: leetcode 算法 python   
 categories: LeetCode
 ---
