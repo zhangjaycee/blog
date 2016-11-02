@@ -7,8 +7,7 @@ categories: 虚拟化
 
 刚想玩玩kvm，结果分不清这几个命令。。搜了一下，记录下来，希望对大家有帮助。
 
-
-## [摘抄]
+## 摘抄
 
 ### 1
 
@@ -51,6 +50,8 @@ qemu-system-arch like /usr/local/bin/qemu-system-x86_64 is for running a system 
 
   官方文档，意思是KVM项目以前fork了一个QEMU的镜像并称为qemu-kvm。现在所有不同的特征都被merge到QEMU的upstream了，称为qemu-kvm的fork版本暂停开发了。
 
+
 ## 暂时的结论
+
 
 现在的qemu已经整合qemu-kvm，不再有qemu-kvm的说法了。一般创建x86的虚拟机需要用到qemu-system-x86_64这个命令，并需要加上--enable-kvm来支持kvm加速。有些Linux发行版的qemu-kvm命令仅仅是qemu-system-x86_64的软链接或者简单包装。

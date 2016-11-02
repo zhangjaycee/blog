@@ -2,7 +2,7 @@ permalink: /:year-:month-:day/:title/
 
 #highlighter: pygments
 highlighter: rouge
-markdown: redcarpet
+#markdown: redcarpet
 redcarpet:
   extensions: [
    "no_intra_emphasis"
