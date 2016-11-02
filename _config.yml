@@ -1,6 +1,7 @@
 permalink: /:year-:month-:day/:title/
 
-highlighter: pygments
+#highlighter: pygments
+highlighter: rouge
 markdown: redcarpet
 redcarpet:
   extensions: [
@@ -19,6 +20,7 @@ redcarpet:
    ,"prettify"
    ,"html_toc"
   ]
+gems: [jekyll-paginate]
 
 
 
