@@ -5,5 +5,5 @@ permalink: /link/
 icon: octicon-link-external
 ---
 
-#### ascii快速查询
-[http://ascii.xdjc.date](http://ascii.xdjc.date)
+#### Jc的个人Wiki
+[http://wiki.jcix.top](http://wiki.jcix.top)
