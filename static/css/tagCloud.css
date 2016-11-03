@@ -1,8 +1,8 @@
 .tagCloud {
     position:relative;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     margin: 20px auto 0;
 }
 .tagCloud a {

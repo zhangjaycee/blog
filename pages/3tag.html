@@ -8,6 +8,12 @@ scripts: [tagCloud.js, tags.js]
 isNavItem: true
 ---
 
+<div class="tagCloud">
+    {% for tag in site.tags %}
+    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+    {% endfor %}
+</div>
+
 
 <div>
     <ul class="tag-box inline">
@@ -29,8 +35,3 @@ isNavItem: true
     {% endfor %}
 </div>
 
-<div class="tagCloud">
-    {% for tag in site.tags %}
-    <a href="#{{ tag | first }}">{{ tag | first }}</a>
-    {% endfor %}
-</div>

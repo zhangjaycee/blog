@@ -15,19 +15,19 @@
 
         function execute(shell){
             //半径
-            var radius = 120;
+            var radius = 190;
             //是否活动
             var active = true;
             //是否分散
             var scatter = true;
             //旋转速度
-            var speed = 2;
+            var speed = 1.5;
             //右旋偏移
             var rightOffset = 50;
             //下旋偏移
             var downOffset = 0;
             //与眼睛的距离
-            var distance=300;
+            var distance=350;
 
             var items = shell.getElementsByTagName('a');
             var itemWraps = [];
