@@ -31,7 +31,7 @@
                         {% if page.url == "/index.html" %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp;Blogs</a>
+                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-repo"></span></span>&nbsp;&nbsp;Blogs</a>
                         </li>
                         {% for p in site.pages %}{% if p.isNavItem %}
                         {% if p.url == page.url %}
@@ -41,6 +41,9 @@
                         </li>
                         {% endif %}
                         {% endfor %}
+                        <li>
+                        <a href="http://wiki.jcix.top/" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp;Wiki</a>
+                        </li>
                         <li><a href="#stq=" class="search-button"><span class="octicon octicon-search"></span></a></li>
                     </ul>
                 </div>
