@@ -2,9 +2,15 @@
 
 模板手动fork自https://github.com/WakelessDragon/blog ， 原README保留在文档末尾。
 
-适配jekyll 2.5.3
-
+适配jekyll 2.5.3  
 需要用pip安装代码高亮插件Pygments
+需要用gem安装markdown解释器redcarpet 3.1.0
+
+```shell
+gem install jekyll -v 2.5.3
+pip install pygments
+gem install redcarpet -v 3.1.0
+```
 
 ---
 
