@@ -1,3 +1,13 @@
+# JciX~~~  我的博客  http://blog.jcix.top
+
+模板手动fork自https://github.com/WakelessDragon/blog ， 原README保留在文档末尾。
+
+适配jekyll 2.5.3
+
+需要用pip安装代码高亮插件Pygments
+
+---
+
 ##[点我查看中文说明](https://github.com/dubuyuye/blog/blob/gh-pages/README_zh_CN.md)
 
 # Blog Address
