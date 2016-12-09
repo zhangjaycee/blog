@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In-kernel memory compression 翻译: 内核内实现的内存压缩
+title: In-kernel memory compression 翻译:内核内实现的内存压缩
 tags: linux kernel memory compression storage cache
 categories: Linux
 ---
