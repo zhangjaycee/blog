@@ -18,7 +18,7 @@ categories: Others
 
 ## Vimium
 可以用类似Vim的快捷键操纵浏览器。可以基本告别鼠标了。。。
-~~
+~~~
 # 我的Vimium按键映射配置
 map <c-f> scrollFullPageDown
 map <c-b> scrollFullPageUp
@@ -37,7 +37,7 @@ b: http://www.baidu.com/s?wd=%s&ie=utf-8 Baidu
 t: http://s.taobao.com/search?q=%s taobao
 s: https://scholar.google.com/scholar?hl=zh-CN&q=%s Google Scholar
 jc: https://github.com/zhangjaycee/real_tech/wiki/%scatalog JciX_Wiki
-~~
+~~~
 
 ## Super Simple Highlighter
 可以在网页上像标记PDF一样高亮标记文字。
