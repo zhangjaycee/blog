@@ -126,7 +126,7 @@ while True:
 ## connman wifi功能的详细配置
 
 这个过程我写在了下边这篇博客里：
-《Intel Galileo开发版PCI-e无线网卡wifi配置》( http://blog.jcix.top/2015-11-27/galileo_connman/ )
+《Intel Galileo开发版PCI-e无线网卡wifi配置》( http://blog.jcix.top/2015-12-10/galileo_connman/ )
 
 ## 实现led灯的亮灭或者光控功能
 

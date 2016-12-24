@@ -11,7 +11,7 @@ categories: 服务器 嵌入式
 
 > 参考：
 
->《鼓捣Galileo开发板的一些吐槽》( http://blog.jcix.xyz/2015-11-04/introduce_galileo/ )
+>《鼓捣Galileo开发板的一些吐槽》( http://blog.jcix.top/2015-11-04/introduce_galileo/ )
 
 记录下实现过程。由于本人表述能力较差，采用简述加大量外部连接的方式进行记录。
 
