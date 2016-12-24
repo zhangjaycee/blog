@@ -28,6 +28,7 @@ qemu-system-arch like /usr/local/bin/qemu-system-x86_64 is for running a system 
 
   意思是，类似qemu-x86_64这种命令是运行某种架构的程序的，qemu-system-x86_64是运行某种架构系统的（虚拟机），如果需要kvm支持，需要加上参数 -enable-kvm， 如果使用libvirt可以配置相应的xml来实现kvm支持。
 
+<!--more-->
 ### 3
 
 > Actually, qemu-kvm is a simple wrapper of qemu-system-x86_64. 

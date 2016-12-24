@@ -28,6 +28,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
 * 大意：给定一个有n个整数的数组S和一个给定的目标值tatget，找出数组中三个数a, b, c，使得三个数之和a + b + c最接近target，输出这个和。
 
+<!--more-->
 
 ## 题目三 4Sum
 > Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.

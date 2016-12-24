@@ -28,6 +28,7 @@ Galileo可以在SD卡中装入完整版Linux镜像，一旦在装有完整版Lin
 
 > 《x86 版的 Arduino 来了，Intel Galileo 开发板的体验、分析和应用【超长文多图】》（http://www.ifanr.com/388835 ）
 
+<!--more-->
 
 ## 两种完整Linux系统
 官方提供了两种可以装在SD卡中的linux系统，但看容量，一个48M左右，另一个210M左右，其实这两个一个基于uclibc编译，一个基于eglibc编译，从事实和容量来看，都是后者更为完整，包含的linux命令工具和第三方库。

@@ -28,6 +28,7 @@ map <c-j> scrollLeft
 map <c-k> scrollRight
 map h previousTab
 map l nextTab
+<!--more-->
 map o Vomnibar.activateInNewTab
 map O Vomnibar.activate
 

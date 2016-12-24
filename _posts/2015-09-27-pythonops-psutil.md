@@ -28,6 +28,7 @@ logical默认为True即cpu逻辑个数
 ##### 内存信息：
 ~~~python
 mem = psutil.virtual_memory()
+<!--more-->
 print mem.total
 print mem.free
 print mem.swap_memory() # sswap分区信息

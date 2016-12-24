@@ -28,6 +28,7 @@ comman(开发板的完整版linux已经内置)
 >
 >《connman百度百科》( http://baike.baidu.com/link?url=3C6RQqswxVvGMxNy7XA1-bWUBU6W0G7_Rvvsv2DRyv04nontgZ9oX7MRgeeNvMuRmjRMqf75_tqspSgjhb8Ysa )
 
+<!--more-->
 ## 步骤
 1. shell下：`connmanctl`，之后跳出"connmanctl>"提示符，之后的connman操作就在这个提示符后操作
 2. `connmanctl> enable wifi`，应该反馈`Enabled wifi`

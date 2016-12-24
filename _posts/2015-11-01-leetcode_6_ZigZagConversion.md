@@ -28,6 +28,7 @@ categories: LeetCode
 ~~~python
 class Solution(object):
     def convert(self, s, numRows):
+<!--more-->
         """
         :type s: str
         :type numRows: int

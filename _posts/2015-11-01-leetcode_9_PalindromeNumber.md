@@ -28,6 +28,7 @@ class Solution(object):
         x = x.strip()
         if x[::1] == x[::-1]:
             return True
+<!--more-->
         else:
             return False
 ~~~

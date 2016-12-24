@@ -28,6 +28,7 @@ class Solution(object):
         :rtype: float
         """
         if len(nums1) == 1 and len(nums2) == 1:
+<!--more-->
             return (float)(nums2[0] + nums1[0])/2;
         elif len(nums1) == 0 and len(nums2) == 1:
             return nums2[0]

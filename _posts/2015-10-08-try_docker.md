@@ -28,5 +28,6 @@ Dockerfile中添加：
 ~~~
 RUN gem sources --remove http://rubygems.org/
 RUN gem sources -a https://ruby.taobao.org/
+<!--more-->
 RUN gem sources -l
 ~~~

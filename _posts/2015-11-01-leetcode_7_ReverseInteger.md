@@ -28,6 +28,7 @@ class Solution(object):
         if x < 0:
             symbol = -1
         else:
+<!--more-->
             symbol = 1
         x = abs(x)
         str_x = str(x)

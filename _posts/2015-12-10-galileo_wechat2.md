@@ -28,6 +28,7 @@ while True：
 我们要做键控，所以可以记录第一帧，然后通过帧间差别进行报警。
 ~~~python
 cap = cv2.VideoCapture(0)
+<!--more-->
 cap.set(3,320)
 cap.set(4,240)
 avg = None

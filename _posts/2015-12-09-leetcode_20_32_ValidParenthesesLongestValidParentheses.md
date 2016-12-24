@@ -28,6 +28,7 @@ class Solution(object):
         """
         l = ['0']
         for ch in s:
+<!--more-->
             if ch == "(" or ch == "[" or ch == "{":
                 l.append(ch)
             elif ch == ")":

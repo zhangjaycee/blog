@@ -28,6 +28,7 @@ class Solution(object):
                 if j > len(s) - 1 or i + longest_len > len(s):
                     break;
                 if i == 0:
+<!--more-->
                     if s[:j+1:1] == s[j::-1]:
                         longest_str = s[i:j+1]
                         longest_len = len(longest_str)

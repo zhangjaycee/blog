@@ -28,6 +28,7 @@ class Solution(object):
             return 0
         ans = []
         neg = "-"
+<!--more-->
         pos = "+"
         ch = str[0]
         if  ch == neg:

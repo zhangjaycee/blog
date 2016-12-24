@@ -28,6 +28,7 @@ class Solution(object):
         """
         :type height: List[int]
         :rtype: int
+<!--more-->
         """
         maxV = 0
         i, j = 0, len(height) - 1

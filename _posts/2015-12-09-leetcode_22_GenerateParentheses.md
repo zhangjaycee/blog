@@ -28,6 +28,7 @@ class Solution(object):
     def isValid(self, s):
         """
         :type s: str
+<!--more-->
         :rtype: bool
         """
         l = ['0']

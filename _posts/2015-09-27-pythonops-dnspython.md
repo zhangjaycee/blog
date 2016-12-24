@@ -28,6 +28,7 @@ import dns.resolver
 
 domain = raw_input('input an domain:')
 A = dns.resolver.query(domain, 'A')
+<!--more-->
 
 for i in A.response.answer:
     for j in i.items:

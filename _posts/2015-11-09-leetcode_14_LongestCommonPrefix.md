@@ -28,6 +28,7 @@ class Solution(object):
             return ""
         if len(strs) == 1:
             return strs[0]
+<!--more-->
         com_str = list(strs[0])
         for i in range(1, len(strs)):
             if len(strs[i]) < len(com_str):

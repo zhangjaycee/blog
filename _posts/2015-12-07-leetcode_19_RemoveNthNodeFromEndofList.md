@@ -28,6 +28,7 @@ python投机取巧的做法，将链表遍历转为数组，直接删除第-n个
 # class ListNode(object):
 #     def __init__(self, x):
 #         self.val = x
+<!--more-->
 #         self.next = None
 
 class Solution(object):

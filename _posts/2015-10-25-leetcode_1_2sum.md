@@ -28,6 +28,7 @@ class Solution:
             if target - value in dictMap:
                 return dictMap[target - value] + 1, index + 1
             dictMap[value] = index
+<!--more-->
 ~~~
 
 然后看到了题解：

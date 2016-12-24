@@ -28,6 +28,7 @@ categories: LeetCode
 * 在一个数的上面画一条横线、表示这个数扩大 1000 倍。
 
 >参考：
+<!--more-->
 >
 >百度百科 罗马数字( http://baike.baidu.com/link?url=4ecgQxgBITojNvEqRX9Hc4z4YrkapYje48mZvTu-MWDcdQtcIOj6lw3OX3kymH7m8Itdya7bSZmgsmtlaJXL0_ )
 

@@ -28,6 +28,7 @@ public:
     int lengthOfLongestSubstring(string s) {
         if ( s.empty() )
             return 0;
+<!--more-->
         int alphabet[256] = {0};
         memset(alphabet,0,sizeof(alphabet));
         int max = 1;

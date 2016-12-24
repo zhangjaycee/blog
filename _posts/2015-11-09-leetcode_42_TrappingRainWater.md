@@ -28,6 +28,7 @@ class Solution(object):
         """
         :type height: List[int]
         :rtype: int
+<!--more-->
         """
         if not height:
             return 0

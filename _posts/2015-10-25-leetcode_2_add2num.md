@@ -28,6 +28,7 @@ Output: 7 -> 0 -> 8
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
+<!--more-->
         """
         :type l1: ListNode
         :type l2: ListNode
