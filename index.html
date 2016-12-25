@@ -1,12 +1,27 @@
 ---
 layout: default
-styles: [article-list.css, category.css]
+styles: [article-list.css, category.css, post.css]
 scripts: [category.js]
 ---
 <div class="row index">
 
+    <div class="content-navigation col-lg-3" style="z-index:999;position:fixed;">
+	<div class="shadow-bottom-center-about">
+	<div class="content-navigation-toc">
+                {% for category in site.categories %}
+                <li>
+                    <a href="javascript:void(0);" class="categories-item" cate="{{ category | first }}">
+                        {{ category | first }}&nbsp;<span class="categories-badge2">{{ category | last | size }}</span>
+                    </a>
+                </li>
 
-    <div class="col-sm-10 col-sm-offset-1 col-lg-9 col-lg-offset-1_5">
+                {% endfor %}
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="content col-lg-9 col-lg-offset-3">
 
         <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -38,7 +53,7 @@ scripts: [category.js]
                     <header>
                         <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
                     </header>
-                    <div class="module">
+                    <div class="module post">
                         <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
                             {{ post.title }}
                         </a>
@@ -95,7 +110,7 @@ scripts: [category.js]
                     <header>
                         <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
                     </header>
-                    <div class="module">
+                    <div class="module post">
                         <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
                             {{ post.title }}
                         </a>
