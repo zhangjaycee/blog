@@ -5,7 +5,24 @@ scripts: [category.js]
 ---
 <div class="row index">
 
-<div class="col-sm-10 col-sm-offset-1 col-lg-9 col-lg-offset-1_5">
+    <div class="content-navigation col-lg-3" style="z-index:999;position:fixed;">
+	<div class="shadow-bottom-center-about">
+	<div class="content-navigation-toc">
+                {% for category in site.categories %}
+                <li>
+                    <a href="javascript:void(0);" class="categories-item" cate="{{ category | first }}">
+                        {{ category | first }}&nbsp;<span class="categories-badge2">{{ category | last | size }}</span>
+                    </a>
+                </li>
+
+                {% endfor %}
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="content col-lg-9 col-lg-offset-3">
+
         <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <span class="octicon octicon-list-unordered"></span>&nbsp;分类目录
