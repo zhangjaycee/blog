@@ -7,22 +7,18 @@ isNavItem: true
 ---
 
 
-# **张佳辰**
-### *Jaycee Zhang*
-[ *zhjcyx@gmail.com* ]
+# Jay<span style="color: rgb(66, 166, 214);">c</span><span style="color: rgb(214, 66, 92);">e</span><span style="color: rgb(66, 214, 114);">e</span> **Zhang**
+#### [ zhjcyx@gmail.com ]
 
-[ *jczhang@nbjl.nankai.edu.cn* ]
+<!-- <wb:follow-button uid="1667668643" type="red_2" width="136" height="24" ></wb:follow-button> -->
 
-<wb:follow-button uid="1667668643" type="red_4" width="100%" height="64" ></wb:follow-button>
+<a class="github-button" href="https://github.com/zhangjaycee" data-style="mega" data-count-href="/zhangjaycee/followers" data-count-api="/users/zhangjaycee#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @zhangjaycee on GitHub">Follow @zhangjaycee</a>
 
+### Xidian University
+#### *<span style="color: rgb(214, 66, 92);">E</span>lectronic <span style="color: rgb(66, 214, 114);">E</span>ngineering*
 
-#### 西安电子科技大学 
-#### *Xidian University*
-
-##### 电子工程学院13级卓越班 
-#### *Electronic Engineering*
-
-
+### Nankai University
+#### *<span style="color: rgb(66, 166, 214);">C</span>omputer <span style="color: rgb(214, 66, 92);">E</span>ngineering*
 
 ***
 

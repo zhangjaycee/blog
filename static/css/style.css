@@ -173,11 +173,26 @@ a:active {text-decoration: none}	/* 选定的链接 */
 .sheet{
     padding:10px 30px;
 }
+.sheet-weibo{
+    word-break: break-all;
+	background-color:#f8f8fd;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 10px rgba(10,10,0,0.1) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 10px rgba(10,10,0,0.1) inset;
+	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 10px rgba(10,10,0,0.1) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 10px rgba(10,10,0,0.1) inset;
+}
+
+.sheet-weibo{
+    padding:10px 10px;
+}
 
 @media screen and (max-width: 767px) {
     .sheet{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .sheet-weibo{
+        padding: 0px;
     }
 }
 
