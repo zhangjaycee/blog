@@ -24,39 +24,47 @@ scripts: [toc.js,post.js]
             {{content}}
           </article>
           <hr class="boundary">
-          <div id="post-share" class="bdsharebuttonbox">
-              <a href="#" class="bds_more" data-cmd="more"></a>
-              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-              <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-              <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-              <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-<!--<wb:share-button appkey="2762799630" addition="number" type="icon" ralateUid="1667668643"></wb:share-button>-->
+          <div id="post-share" class="bdsharebuttonbox" style="text-align:center;">
+<!--              <a href="#" class="bds_more" data-cmd="more"></a>--!>
+<!--              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>--!>
+<!--              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>--!>
+<!--              <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>--!>
+<!--              <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>--!>
+<!--              <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>--!>
+<wb:share-button appkey="2762799630" addition="full" type="button" ralateUid="1667668643"></wb:share-button>
           </div>
-<!-- UJian Button BEGIN -->
-<div class="ujian-hook"></div>
-<script type="text/javascript">var ujian_config = {num:8,showType:4,target:1,bgColor:'#',mouseoverColor:'#F8F8FD',hoverTextColor:'#D6425C'};</script>
-<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=2122684"></script>
-<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
-<!-- UJian Button END -->
-
         </div>
 
         <div class="pad-min"></div>
-<!--
+
+<!--weibo
         <div id="post-comment" class="sheet-weibo post">
 		<wb:comments url="auto" fontsize="14" width="auto" color="f8f8fd,f8f8fd,4c4c4c,d6425c,cccccc,f0f0f0" language="zh_cn" appkey="2762799630" ralateuid="1667668643" ></wb:comments>
         </div>
+weibo--!>
+
+<!--
         </div>
         <div id="post-comment" class="sheet post">
             <div id="disqus_thread"></div>
         </div>
 --!>
         <div id="post-comment" class="sheet post">
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2122684"></script>
-    </div>
-
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2122684"></script>
+    	</div>
+<!--
+        <div id="post-comment" class="sheet post">
+<div id="SOHUCS" sid="{{ page.id }}" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysLA9J9K'; 
+var conf = 'prod_eceb2692f4c89cf135414ac0b447721f'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+	</div>
+--!>
 </div>
 
 
