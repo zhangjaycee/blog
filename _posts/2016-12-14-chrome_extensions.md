@@ -40,6 +40,17 @@ s: https://scholar.google.com/scholar?hl=zh-CN&q=%s Google Scholar
 jc: https://github.com/zhangjaycee/real_tech/wiki/%scatalog JciX_Wiki
 ~~~
 
+
+### wasavi
+用于在输入框(textarea)以类似vim的形式输入
+~~~
+" exrc for wasavi
+" 配置文件
+:set nu
+:set theme=charcoal
+:map! <backspace> <Left><Delete>
+~~~
+
 ## Super Simple Highlighter
 可以在网页上像标记PDF一样高亮标记文字。
 
