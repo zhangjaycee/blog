@@ -1,23 +1,11 @@
 <div class="scriptHub">
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js"></script>
+   <!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js"></script>
     <script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+--!>    
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{'/static/js/script.js' | prepend:site.baseurl | prepend: site.url  }}"></script>
     {% for script in page.scripts %}<script type="text/javascript" src="{{'/static/js/' | prepend:site.baseurl | append: script | prepend: site.url }}"></script>
     {% endfor %}
 </div>
 
-<!-- 广告位：
-<script>
-(function() {
-    var s = "_" + Math.random().toString(36).slice(2);
-    document.write('<div id="' + s + '"></div>');
-    (window.slotbydup=window.slotbydup || []).push({
-        id: '3227156',
-        container: s,
-        size: '120,600',
-        display: 'float'
-    });
-})();
-</script>
-<script src="http://dup.baidustatic.com/js/os.js"></script>
- 广告位：ad --!>
