@@ -74,6 +74,7 @@ ssh jcvm0@192.168.4.101 登陆成功
 1. **以实验0为基础。**
 2. 开启路由转发：编辑 /etc/sysctl.conf 配置文件，将 net.ipv4.ip_forward = 0 修改为net.ipv4.ip_forward = 1， 重启 host。
 3. 利用 iptables 搭建 MASQUERADE 模式的 NAT，执行下面两条命令的一条即可，本实验中效果相同：
+
 ~~~
 # 第一条命令中将 192.168.4.0\24 网段的数据包伪装成 wlp2s0 接口的 ip 
 # 发送出去，所以要实现 guest 通过 NAT 共享上网，wlp2s0 处应该填写连入
