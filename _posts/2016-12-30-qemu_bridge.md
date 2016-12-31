@@ -101,6 +101,8 @@ address 192.168.4.101 # 这个 ip 为手动指定，应在 br0 的同一网段
 netmask 255.255.255.0
 gateway 192.168.4.1 # 这里应该设置成 host 中 br0 的 ip，相当于创建了默认到 br0 ip 的路由
 #up route add default gw 192.168.4.1 dev ens3 # 经过实验，这句于上一句效果等价，二者留一即可，所以注释掉了
+bridge_ports none # 但是又发现，这里不设置这个参数会导致网桥创建失败，所以我们可以
+                  # 写一个不存在的接口来混过这个检查，比如我这里写了个 none
 dns-nameservers 192.168.3.1 # 将 dns 服务器设置为我的路由器 ip 即可
 ~~~
 
