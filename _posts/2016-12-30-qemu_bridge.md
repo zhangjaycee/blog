@@ -36,9 +36,14 @@ br0
 ~~~
 
 3.启动 Qemu 虚拟机，这里的 `-net bridge,br=br0` 指定了网桥模式，qemu 会用 qemu-bridge-helper 创建 tap0 虚拟网络接口桥接入br0 的，我的启动命令如下：
+
 ~~~bash
-qemu-system-x86_64 -m 1000 -enable-kvm ~/vmimgs/u1604server.img -net nic -net bridge,br=br0 -vnc :1
+# 注意如果创建两个以上虚拟机的时候，应该手动指定 mac 地址防止多个 guest 
+# 的 mac地址 重复导致 guest 之间不能互相 ping 通，比如：
+qemu-system-x86_64 -m 1000 -enable-kvm ~/vmimgs/u1604server.img \
+-net nic,macaddr=52:54:00:12:34:57 -net bridge,br=br0 -vnc :1
 ~~~
+
 4.通过 vnc 连入 guest，配置其 /etc/network/interfaces 文件，然后通过 `/etc/init.d/networking restart` 重启服务。
 ~~~
 # KVM GUEST: /etc/network/interfaces
@@ -58,24 +63,32 @@ gateway 192.168.4.1 # 这里应该设置成 host 中 br0 的 ip，
                                               # 价，二者留一即可，所以注释掉了
 
 ~~~
-5.测试
-~~~
-guest 中：
+
+### 测试
+~~~bash
+#guest0(192.168.4.101) 中：
 ping 192.168.4.1 -c 3 成功
-host 中：
+ping 192.168.4.102 -c 3 成功
+ssh jcvm0@192.168.4.102 登陆成功
+#guest1(192.168.4.102) 中：
+ping 192.168.4.1 -c 3 成功
 ping 192.168.4.101 -c 3 成功
+ssh jcvm0@192.168.4.101 登陆成功
+#host 中：
+ping 192.168.4.101 -c 3 成功
+ping 192.168.4.102 -c 3 成功
 ssh jcvm0@192.168.4.101 登陆成功
 ~~~
 
 ## 实验1：
-### 实现效果：
+### 效果：
 在实验0的基础上，实现 guest 通过无线接口的网络连接互联网，相当于 host 做了一个 NAT。
 ### 步骤：
 1. **以实验0为基础。**
 2. 开启路由转发：编辑 /etc/sysctl.conf 配置文件，将 net.ipv4.ip_forward = 0 修改为net.ipv4.ip_forward = 1， 重启 host。
 3. 利用 iptables 搭建 MASQUERADE 模式的 NAT，执行下面两条命令的一条即可，本实验中效果相同：
 
-~~~
+~~~bash
 # 第一条命令中将 192.168.4.0\24 网段的数据包伪装成 wlp2s0 接口的 ip 
 # 发送出去，所以要实现 guest 通过 NAT 共享上网，wlp2s0 处应该填写连入
 # 互联网的网络接口，这里 wlp2s0 是我的无线网卡接口。
@@ -106,17 +119,15 @@ bridge_ports none # 但是又发现，这里不设置这个参数会导致网桥
 dns-nameservers 192.168.3.1 # 将 dns 服务器设置为我的路由器 ip 即可
 ~~~
 
-5.测试
-~~~
-guest 中：
-ping 192.168.4.1 -c 3 成功
+### 测试
+~~~bash
+#guest0(192.168.4.101) 中：
 ping 192.168.3.1 -c 3 成功
-ping baidu.com 成功
-host 中：
-ping 192.168.4.101 -c 3 成功
-ssh jcvm0@192.168.4.101 登陆成功
+ping baidu.com -c 3 成功
+#guest1(192.168.4.102) 中：
+ping 192.168.3.1 -c 3 成功
+ping baidu.com -c 3 成功
 ~~~
-
 
 > [Tap networking with QEMU] https://wiki.archlinux.org/index.php/QEMU#Tap_networking_with_QEMU
 
