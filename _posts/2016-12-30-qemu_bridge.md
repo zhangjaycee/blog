@@ -17,15 +17,15 @@ guest 与 guest、guest 与 host 之间可以互相 ping 通；guest 不能访�
 在 host 中搭建了一个虚拟网桥，将 qemu-bridge-helper 工具在启动虚拟机时创建的虚拟网络接口 tap0[1,2...] 与 host 桥接在一起，我手动配置了他们的网段是192.168.4.0\24。
 
 ### 步骤：
-
 1.配置 host 的 /etc/network/interfaces ，在其中加入以下内容，然后通过 `/etc/init.d/networking restart` 重启服务来创建网桥。
-
 ~~~
 auto br0
 iface br0 inet static
 address 192.168.4.1 # br0 的 ip 在192.168.4.0\24
 netmask 255.255.255.0 
 #bridge_ports enp1s0 # 实验发现，这里没必要将 host 的实体接口桥接，所以注释了起来
+bridge_ports none # 但是又发现，这里不设置这个参数会导致网桥创建失败，所以我们可以
+                  # 写一个不存在的接口来混过这个检查，比如我这里写了个 none
 bridge_stp on
 ~~~
 <!--more-->
