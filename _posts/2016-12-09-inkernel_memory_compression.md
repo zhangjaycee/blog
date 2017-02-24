@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In-kernel memory compression 翻译:内核内实现的内存压缩
-tags: linux kernel memory compression storage cache
+tags: linux 内核 lwn.net 翻译 memory compression cache 
 categories: Linux
 ---
 （发布于 April 3, 2013， 意译于12/9/2016）
