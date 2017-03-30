@@ -21,11 +21,10 @@ isNavItem: true
 ### Nankai University
 #### *<span style="color: rgb(66, 166, 214);">C</span>omputer <span style="color: rgb(214, 66, 92);">E</span>ngineering*
 
-***
+---
 
 
-
-##博客
+## 博客
 
 本人开的第一个博客。。。
 内容包括学习过程中的各种心得体会和总结摘抄。
@@ -33,4 +32,14 @@ isNavItem: true
 <div style="padding:5px 20px;" ><wb:like appkey="4sbKjk"></wb:like></div>
 
 > 博客托管在阿里云上搭建的Nginx服务器上，博文和网站借助jekyll工具生成，网站整体是在[@RainAlley](https://github.com/dubuyuye)提供的开源博客代码上自己修改的，Nginx和jekyll均在docker构建的容器中运行(16年11月撤出docker容器)。
+
+---
+
+
+## 一些大神的博客推荐：
+
+* [WorldHellooo's Blog](https://worldhellooo.github.io/) [深度学习 / 视频图像]
+
+* [Chaway's Blog](http://chaway.github.io/) [视频图像 / 机器学习]
+
 
