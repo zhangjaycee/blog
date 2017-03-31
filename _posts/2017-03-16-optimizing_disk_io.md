@@ -2,7 +2,7 @@
 layout: post
 title: Optimizing Disk I/O MySQL文档翻译：优化磁盘I/O
 tags:  innodb 翻译 mysql io
-categories: 存储
+categories: MySQL
 ---
 > 原文: [MySQL 5.7 Reference Manual — 9.12.2 Optimizing Disk I/O](https://dev.mysql.com/doc/refman/5.7/en/disk-issues.html)
 

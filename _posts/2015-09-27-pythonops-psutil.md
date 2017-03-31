@@ -2,7 +2,7 @@
 layout: post
 title: python自动化运维笔记(1)----psutil
 tags: python linux 运维
-categories: python
+categories: Linux
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Shell脚本中进行多行注释的方法
 tags: shell 注释 linux
-categories: Linux
+categories: Shell
 ---
 
 我发现。。shell脚本貌似不像C或者Python一样自带注释语法，不过拐弯抹角还是有一些方法的。。囧

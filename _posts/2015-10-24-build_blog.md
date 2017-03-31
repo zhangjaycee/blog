@@ -2,7 +2,7 @@
 layout: post
 title: 运用jekyll+Nginx+docker搭建博客的总结
 tags: docker nginx jekyll blog 服务器 阿里云
-categories: 服务器
+categories: Others
 ---
 
 

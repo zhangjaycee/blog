@@ -2,7 +2,7 @@
 layout: post
 title: python自动化运维笔记(2)----dnspython
 tags: python linux 运维
-categories: python
+categories: Linux
 ---
 
 ## 准备工作

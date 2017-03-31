@@ -2,7 +2,7 @@
 layout: post
 title: Optimizing InnoDB Disk I/O MySQL文档翻译：优化InnoDB磁盘I/O
 tags:  innodb 翻译 mysql io
-categories: 存储
+categories: MySQL
 ---
 
 

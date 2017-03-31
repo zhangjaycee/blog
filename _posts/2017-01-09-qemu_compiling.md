@@ -2,7 +2,7 @@
 layout: post
 title: 从源码编译Qemu的流程及简述
 tags: 虚拟化 qemu 编译 make
-categories: 虚拟化
+categories: QEMU
 ---
 
 要理解甚至修改Qemu，肯定要会编译它，不能老是apt-get，所以做个流程记录，并带上简单的解释。

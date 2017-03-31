@@ -2,7 +2,7 @@
 layout: post
 title: Galileo开发板+opencv+微信公众平台实现简单的物联网家庭监控(2)  
 tags: intel galileo django python 服务器 docker IoT linux 
-categories: 服务器 嵌入式
+categories: 嵌入式
 ---
 
 

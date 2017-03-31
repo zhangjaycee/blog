@@ -2,7 +2,7 @@
 layout: post
 title: 折腾Docker的一些吐槽点
 tags: docker
-categories: Docker
+categories: Others
 ---
 <div class="toc"></div>
 

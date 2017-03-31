@@ -2,7 +2,7 @@
 layout: post
 title: Qemu KVM 虚拟机通过虚拟网桥实现桥接和NAT的实验
 tags: qemu kvm 网络 虚拟化 linux 
-categories: 虚拟化
+categories: QEMU
 ---
 ## 系统概况： 
 * host 和 guest 都是用的 Ubuntu Server 16.04系统。

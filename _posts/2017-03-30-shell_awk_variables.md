@@ -2,7 +2,7 @@
 layout: post
 title: 在awk中如何使用或赋值shell的变量
 tags:  shell awk linux
-categories: linux
+categories: Shell
 ---
 
 写shell脚本处理文本的时候，经常用到awk来配合shell命令。但是awk的大括号中和shell貌似是两个世界。本文只介绍最容易理解的方法（作者水平有限，复杂的以后可能补充），来实现awk对shell变量的使用和更改。

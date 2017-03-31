@@ -2,7 +2,7 @@
 layout: post
 title: qemu/qemu-kvm/qemu-system-x86_64/qemu-x86_64命令的区别？
 tags: 虚拟化 qemu kvm linux
-categories: 虚拟化
+categories: QEMU
 ---
 
 刚想玩玩kvm，结果分不清这几个命令。。搜了一下，记录下来，希望对大家有帮助。
