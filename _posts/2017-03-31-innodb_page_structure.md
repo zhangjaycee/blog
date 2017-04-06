@@ -4,9 +4,7 @@ title: InnoDB Page Structure -- High-Altitude View MySQL文档翻译：InnoDB页
 tags:  innodb 翻译 mysql 页 B树
 categories: MySQL
 ---
-
 > 原文 [MySQL Internals Manual 22.2.1 High-Altitude View] https://dev.mysql.com/doc/internals/en/innodb-page-overview.html
-
 
 ## 0. 概述
 
@@ -27,10 +25,10 @@ InnoDB的页有7个部分：
 +----------------------------+
 | Fil Trailer                |
 +----------------------------+
-
 ```
 
 你可以发现，每个页有头尾(header/trailer)对。靠内的头尾对(Page Header和Page Directory)主要是由page程序组的所关注的，而外部的头尾对(Fil Header和Fil Trailer)主要是fil程序组的关注 。 Fil Header也被称为“文件页头(File Page Header)”。
+<!--more-->
 
 其他中间的夹层是记录(records)和空闲空间， 页面始终以两个称为Infimum和Supremum的不变的记录开头。然后就到了用户记录， 在User Records（向下增长）和Page Directory（向上增长）之间是留给新记录的空间。
 
