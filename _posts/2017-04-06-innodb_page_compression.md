@@ -28,6 +28,7 @@ InnoDB支持file-per-table表空间中的表的页级压缩。 此功能称为�
 
 * SLE11 kernel version 3.0-x
 
+<!--more-->
 * SLE12 kernel version 3.12-x
 
 * OES11 kernel version 3.0-x
