@@ -96,35 +96,6 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
                 <span class="octicon octicon-list-unordered"></span>&nbsp;Related
             </div>
             <div class="content-navigation-list">
-                <ul>
-                    {% assign postsAfterFilter = '-' | split: "-" %}
-                    {% for p in site.posts %}
-                        {%if p.url != page.url %}
-                            {% assign commonTagCount = 0 %}
-                            {% for tag in p.tags %}
-                                {% if page.tags contains tag %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-                            {% for cat in p.categories %}
-                                {% if page.categories contains cat %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-                            {% if commonTagCount > 0 %}
-                                {% assign postsAfterFilter = postsAfterFilter | push: p %}
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                    {% if postsAfterFilter.size > 0 %}
-                        {% for p in postsAfterFilter limit: 8 %}
-                            <li>
-                                <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
-                            </li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-<!--
                	<ul>
                         {% for p in site.related_posts limit: 10 %}
                             <li>
@@ -132,7 +103,6 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
                             </li>
                         {% endfor %}
 		</ul>
---!>
             </div>
         </div>
       </div>

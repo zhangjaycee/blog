@@ -51,7 +51,7 @@ InnoDB支持file-per-table表空间中的表的页级压缩。 此功能称为�
 
 ## Windows上打洞大小
 
-在Windows系统上，稀疏文件(sparse file)的基础架构基于NTFS压缩。打孔尺寸是NTFS压缩单元，是NTFS集群大小的16倍。 集群大小及其压缩单位如下表所示：
+在Windows系统上，稀疏文件(sparse file)的基础架构基于NTFS压缩。打孔尺寸是NTFS压缩单元，是NTFS簇大小的16倍。 簇大小及其压缩单位如下表所示：
 
 |簇大小|压缩单元|
 |---|---|
