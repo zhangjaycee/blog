@@ -6,6 +6,9 @@ icon: octicon-heart
 isNavItem: true
 ---
 
+<meta property="og:type" content="webpage" />
+<meta property="og:url" content="http://blog.jcix.top" />
+<meta property="og:title" content="我刚刚赞了JciX博客，不错哦，你也来看看吧～" />
 
 # Jay<span style="color: rgb(66, 166, 214);">c</span><span style="color: rgb(214, 66, 92);">e</span><span style="color: rgb(66, 214, 114);">e</span> **Zhang**
 #### [ zhjcyx@gmail.com ]
