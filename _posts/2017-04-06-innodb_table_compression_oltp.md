@@ -17,13 +17,13 @@ MySQL 5.6中引入的配置选项可让您调节压缩对特定MySQL实例的工
 
 * `innodb_compression_level`： 允许你向上或向下调整压缩程度，更高的值可以让你节省更多空间存储更多数据，同时在压缩时牺牲更多CPU周期，比较低的值可以让你在存储空间不重要时或者在数据不太适合被压缩时减小CPU开销。
 
-* `innodb_compression_failure_threshold_pct`： 指定了一个更改压缩表失败的阈值，当它被超过时，MySQL开始在每个新的压缩页中增加一些额外的空闲的保留空间(padding)，动态的调整这个空余空间的大小会动态大小，上限是由 `innodb_compression_pad_pct_max`指定的，它是页面大小的一个百分比。
+* `innodb_compression_failure_threshold_pct`： 指定了一个进行页压缩失败的百分比阈值，当它被超过时，MySQL开始在每个新的压缩页中增加一些额外的空闲的保留空间(padding)，动态的调整这个空余空间的大小，padding的上限是由`innodb_compression_pad_pct_max`指定的，它是页面大小的一个百分比。
 
-* `innodb_compression_pad_pct_max`：允许您调整每个页面中空闲保留空间的最大空间量，以将更改记录到压缩行，而无需再次压缩整个页面。 值越高，就可以记录更多的更改，而无需重新压缩页面。(当指定百分比的压缩操作在运行时“失败”时，需要一个昂贵的操作来分割压缩页面，只有这时MySQL才会为每个压缩表中的页面使用可变空间的空间。)
+* `innodb_compression_pad_pct_max`：允许你调整每个页面中用于直接保存更改和插入数据的空闲保留空间(padding)的最大值(这样就无需每次更改和插入都再次压缩整个页面)。 值越高，就可以记录更多的更改(???)，而无需重新压缩页面。MySQL运行时,只有当需要昂贵分割操作的"压缩失败”达到上一个参数所指定的百分比时，才会为每个压缩表中的页面增加一个大小可变的空余空间(padding)。
 
-* `innodb_log_compressed_pages`：默认情况下，此选项被启用，以防止在恢复期间使用不同版本的zlib压缩算法时可能会发生损坏。 如果您确定zlib版本不会更改，请禁用`innodb_log_compressed_pages`以减少为修改压缩数据而生成的重做日志。
+* `innodb_log_compressed_pages`：默认情况下，此选项被启用，以防止在恢复期间使用不同版本的zlib压缩算法时可能会发生损坏。 如果你确定zlib版本不会更改，请禁用`innodb_log_compressed_pages`以减少为修改压缩数据而生成的重做日志。
 
 
-因为使用压缩数据有时会同时将内存中的压缩版本和未压缩版本同时保留在内存中，因此在OLTP工作负载下进行压缩时，请准备增加`innodb_buffer_pool_size`配置选项的值。
+由于开启压缩时，内存中可能同时保留存在数据的压缩版本和未压缩版本，所以在OLTP工作负载下进行压缩时，`innodb_buffer_pool_size`配置选项的值可能会需要增加。
 
 <!--more-->

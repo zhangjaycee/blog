@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL InnoDB透明页压缩的简单分析
-tags:  innodb mysql 压缩 LZ4 透明页压缩 源码分析
+tags: innodb mysql 压缩 LZ4 透明页压缩 源码分析
 categories: MySQL
 ---
 
