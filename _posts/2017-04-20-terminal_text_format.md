@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 用C、Python和Shell语言在终端打印文本的格式和颜色
+title: 用C、Python和Shell语言在终端打印格式化和彩色文本
 tags: 终端 shell linux 调试 
 categories: Programming
 ---
@@ -28,6 +28,7 @@ echo -e '\033[Para0{;Para1...}mhello, world\033[0m'
 \033[Para0{;Para1...}mYOUR_TEXT\033[0m
 ```
 
+<!--more-->
 * `\033[Para0{;Para1...}m` 表示转义开始
 * `\033[0m` 作为转义结束
 * `Para0(1,2...)` 参数可以为多个，比如上述例子中，3表示为斜体，34表示蓝色
@@ -42,7 +43,7 @@ Linux中通过`man console_codes`命令可查看详细的参数描述，这里�
 
 |参数代码|描述|
 |---|---|
-|0|重制所有格式|
+|0|重置所有格式|
 |1|粗体(高亮)|
 |2|暗色|
 |3|斜体|
