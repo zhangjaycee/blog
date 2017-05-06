@@ -19,7 +19,7 @@ print "\033[3;34mhello, world\033[0m"
 
 * Shell
 ```bash
-echo -e '\033[Para0{;Para1...}mhello, world\033[0m'
+echo -e '\033[3;34mhello, world\033[0m'
 ```
 
 ## 格式
