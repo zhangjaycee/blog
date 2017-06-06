@@ -6,7 +6,7 @@ categories: MySQL
 ---
 
 
-> 原文：[MySQL 5.7 Reference Manual -- 9.12.2 Optimizing Disk I/O](https://dev.mysql.com/doc/refman/5.7/en/disk-issues.html)
+> 原文：[8.5.8 Optimizing InnoDB Disk I/O](https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html)
 
 > 这页感觉比较重要，翻译一下。。
 
